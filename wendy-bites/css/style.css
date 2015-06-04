@@ -4,6 +4,9 @@ body {
   font-size: 16px;
   line-height: 24px;
 }
+* {
+  box-sizing: border-box;
+}
 
 h1, h2, h3, h4, h5, h6, p, a, li, blockquote {
   padding-top: 20px;
@@ -13,4 +16,33 @@ h1, h2, h3, h4, h5, h6, p, a, li, blockquote {
 blockquote {
   font-style: italic;
   font-size: 24px;
+}
+#container {
+  width: 60%;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+}
+ header {
+   padding-top: 40px;
+   padding-bottom: 40px;
+   text-align: center;
+   background: #CDEFDC;
+ }
+
+header img {
+  border-radius: 50%;
+}
+
+section div {
+  text-align: center;
+}
+
+.button {
+  display: block;
+  color: #020202;
+  font-weight: bold;
+  background: #CDEFDC;
+  padding: 8px;
+  text-decoration: none;
 }
