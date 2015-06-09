@@ -1,0 +1,36 @@
+body {
+  font-family: Lato;
+}
+
+h1 a {
+font-size: 75px;
+font-weight:300;
+color: #f30000;
+text-decoration: none;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight:300;
+  color: #000000;
+  text-decoration:none;
+}
+
+h2 a {
+  font-size: 54px;
+  font-weight:300;
+  color: #000000;
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 40px;
+  color: #dddddd;
+}
+
+nav a {
+  font-size: 30px;
+  font-weight:300;
+  color: #dddddd;
+  padding: 20px;
+}

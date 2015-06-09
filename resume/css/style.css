@@ -1,0 +1,22 @@
+body {
+  background-color: #c9cccd;
+}
+
+header {
+   padding-top: 40px;
+   padding-bottom: 40px;
+   text-align: center;
+   background: #FFFFFF;
+ }
+
+h2 {
+  color: #000000;
+}
+
+h4 {
+  color: #25c7f4;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
