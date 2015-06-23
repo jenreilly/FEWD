@@ -1,0 +1,43 @@
+.nav{
+  background:url('../../img/hamburger.svg');
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  cursor: pointer;
+}
+
+
+#nav ul {
+  left: -200px;
+  position:absolute;
+  top: 0;
+  padding: 50px;
+  width: 100px;
+}
+
+#container.open #nav ul{
+  left: 0;
+}
+
+#container.open #slider{
+  margin-left: 100px;
+}
+
+#container.open .nav {
+  margin-left: 100px;
+}
+
+#nav ul {
+  transition: 2s;
+}
+
+#slider {
+  transition: 2s;
+}
+
+.nav {
+  transition: 2s;
+}
