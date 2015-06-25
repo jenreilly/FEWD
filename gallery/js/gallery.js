@@ -3,7 +3,33 @@ Element.prototype.Gallery = function(){
 var gallery = this;
 var ul = gallery.children[0];
 var photos = new Object();
+var container = document.getElementById('container');
+
   // Define global variables
+
+  this.singlePhoto = function(ev){
+    console.log(ev.target.style.backgroundImage);
+    var section = document.createElement('section');
+    section.classList.add('single-photo');
+    section.innerHTML = ev.target.innerHTML;
+    section.style.backgroundImage = ev.target.style.backgroundImage;
+    section.style.backgroundRepeat = 'no-repeat';
+    section.style.backgroundSize = 'contain';
+    section.style.backgroundPosition = 'center center';
+    section.style.height = '100%';
+
+    var closeButton = document.createElement('div');
+    closeButton.classList.add('close');
+
+    closeButton.addEventListener('click',function(){
+      section.style.display = 'none';
+    });
+
+    section.appendChild(closeButton);
+    container.appendChild(section);
+
+  };
+
 
   this.layoutPhotos = function(){
       // add logic for each photo in here
@@ -23,6 +49,8 @@ var photos = new Object();
           '</h6></div><div class="stats"><div>'+
           photo.rating+'</div><div>'+
           '</div>';
+
+        li.addEventListener('click',gallery.singlePhoto);
 
 
         ul.appendChild(li);
