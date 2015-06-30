@@ -8,8 +8,9 @@ var container = document.getElementById('container');
   // Define global variables
 
   this.singlePhoto = function(ev){
-    console.log(ev.target.style.backgroundImage);
+
     var section = document.createElement('section');
+
     section.classList.add('single-photo');
     section.innerHTML = ev.target.innerHTML;
     section.style.backgroundImage = ev.target.style.backgroundImage;
@@ -18,6 +19,10 @@ var container = document.getElementById('container');
     section.style.backgroundPosition = 'center center';
     section.style.height = '100%';
 
+    var p = document.createElement('p');
+    p.innerHTML = ev.target.dataset.description;
+
+
     var closeButton = document.createElement('div');
     closeButton.classList.add('close');
 
@@ -25,6 +30,7 @@ var container = document.getElementById('container');
       section.style.display = 'none';
     });
 
+    
     section.appendChild(closeButton);
     container.appendChild(section);
 
@@ -36,7 +42,7 @@ var container = document.getElementById('container');
 
       photos.forEach(function(photo,index){
 
-        console.log(photo);
+
         var li = document.createElement('li');
 
         li.style.backgroundImage = 'url("'+photo.image_url+'")';
@@ -50,8 +56,9 @@ var container = document.getElementById('container');
           photo.rating+'</div><div>'+
           '</div>';
 
-        li.addEventListener('click',gallery.singlePhoto);
+        li.dataset.description = photo.description;
 
+        li.addEventListener('click',gallery.singlePhoto);
 
         ul.appendChild(li);
 
