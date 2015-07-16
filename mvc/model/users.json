@@ -1,0 +1,30 @@
+{
+  "users": [{
+    "name": "Jen",
+    "age": "30",
+    "occupation": "Editor"
+    },
+
+    {
+      "name": "Nate",
+      "age": "32",
+      "occupation": "Producer"
+    },
+
+    {  "name": "Lauren",
+      "age": "31",
+      "occupation": "Designer"
+    },
+
+    {
+      "name": "Brian",
+      "age": "36",
+      "occupation": "Director"
+    },
+
+    {
+      "name": "Rob",
+      "age": "30",
+      "occupation": "Assistant"
+    }]
+}
